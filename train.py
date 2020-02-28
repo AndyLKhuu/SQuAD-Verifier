@@ -26,6 +26,7 @@ from util import collate_fn, SQuAD
 
 def main(args):
     # Set up logging and devices
+    # ***** Add temporary comment to set up version control *******
     args.save_dir = util.get_save_dir(args.save_dir, args.name, training=True)
     log = util.get_logger(args.save_dir, args.name)
     tbx = SummaryWriter(args.save_dir)
