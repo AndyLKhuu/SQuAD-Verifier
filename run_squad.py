@@ -524,7 +524,7 @@ def main():
     )
     parser.add_argument(
         "--output_dir",
-        default="/save/",
+        default="save/",
         type=str,
         required=False,
         help="The output directory where the model checkpoints and predictions will be written.",
@@ -533,7 +533,7 @@ def main():
     # Other parameters
     parser.add_argument(
         "--data_dir",
-        default="/data/",
+        default="data/",
         type=str,
         help="The input data dir. Should contain the .json files for the task."
         + "If no data dir or train/predict files are specified, will run with tensorflow_datasets.",
