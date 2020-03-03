@@ -524,7 +524,7 @@ def main():
     )
     parser.add_argument(
         "--output_dir",
-        default="\save\",
+        default="\save\\",
         type=str,
         required=False,
         help="The output directory where the model checkpoints and predictions will be written.",
