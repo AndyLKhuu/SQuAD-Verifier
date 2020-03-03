@@ -524,7 +524,7 @@ def main():
     )
     parser.add_argument(
         "--output_dir",
-        default="save/",
+        default="bertBaseline/",
         type=str,
         required=False,
         help="The output directory where the model checkpoints and predictions will be written.",
@@ -609,9 +609,9 @@ def main():
         "--do_lower_case", action="store_true", help="Set this flag if you are using an uncased model."
     )
 
-    parser.add_argument("--per_gpu_train_batch_size", default=8, type=int, help="Batch size per GPU/CPU for training.")
+    parser.add_argument("--per_gpu_train_batch_size", default=3, type=int, help="Batch size per GPU/CPU for training.")
     parser.add_argument(
-        "--per_gpu_eval_batch_size", default=8, type=int, help="Batch size per GPU/CPU for evaluation."
+        "--per_gpu_eval_batch_size", default=3, type=int, help="Batch size per GPU/CPU for evaluation."
     )
     parser.add_argument("--learning_rate", default=5e-5, type=float, help="The initial learning rate for Adam.")
     parser.add_argument(
